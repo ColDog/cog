@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cog</title>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
+</head>
+<body>
+<nav class="navbar navbar-inverse" role="navigation" style="padding:0;border-radius:0;margin:0">
+	<div class="collapse navbar-collapse">
+		<div class="container-fluid">
+			<ul class="nav navbar-nav navbar-left">
+				<li>
+					<a href="#" id="menu-toggle">
+						<span class="glyphicon glyphicon-th-large"></span>
+					</a>
+				</li>
+				<li>
+					<a href="/">
+						Your Site
+					</a>
+				</li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+					<a href="#" data-toggle="dropdown" class="dropdown-toggle">
+						<span class="glyphicon glyphicon-user"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="<%= path('users', user()._id) %>">Profile</a></li>
+						<li><a href="#" id="logout">Logout</a></li>
+					</ul>
+				</li>
+
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+						<span class="glyphicon glyphicon-envelope"></span>
+						<span class="badge badge-notify small">3</span>
+					</a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="#">Notification</a>
+						</li>
+						<li>
+							<a href="#">Another Notification</a>
+						</li>
+						<li>
+							<a href="#">Something else here</a>
+						</li>
+						<li>
+							<a href="#">Separated link</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+
+<div id="wrapper">
+	<div id="sidebar-wrapper">
+		<ul class="sidebar-nav">
+			<li>
+				<a href="/users/1">Profile</a>
+			</li>
+				<li class="sidebar-header">
+					<h6>Admin</h6>
+				</li>
+				<li>
+					<a href="/admin">Dashboard</a>
+				</li>
+				<li>
+					<a href="/admin/goals">Goals</a>
+				</li>
+				<li>
+					<a href="/admin/courses">Courses</a>
+				</li>
+				<li>
+					<a href="/admin/users">Users</a>
+				</li>
+		</ul>
+	</div>
+
+
+	<div id="page-content-wrapper">
+		<div class="container-fluid">
+			<div class="row">
+				<section id="page-template">
+					<%= yield %>
+				</section>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>

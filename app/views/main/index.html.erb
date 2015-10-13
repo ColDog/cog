@@ -1,0 +1,41 @@
+<nav class="navbar navbar-default navbar-fixed-top" style="z-index: 5">
+	<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">Brand</a>
+		</div>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#">Link</a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Action</a></li>
+						<li><a href="#">Another action</a></li>
+						<li><a href="#">Something else here</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="#">Separated link</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+</nav>
+
+<header style="z-index: 10">
+	<div class="header-content">
+		<div class="header-content-inner">
+			<h1>Fabric: LMS Software that Puts You in Charge</h1>
+			<hr>
+			<p>Fabric strengthens and supports communities of practice. New members are welcomed, their environment is completely personalized and they can quickly meet and connect with peers or potential mentors. As members develop, they can create and follow personalized learning plans, participate in Q&A knowledge building, comment, discuss and live chat.</p>
+			<a href="#about" class="btn btn-primary btn-xl page-scroll">LEARN</a>
+			<a href="#about" class="btn btn-primary btn-xl page-scroll">GET STARTED</a>
+		</div>
+	</div>
+</header>
+
+<%= render 'main/sections/features' %>
+<%= render 'main/sections/companies' %>
+<%= render 'main/sections/case_studies', case_studies: @case_studies %>
+<%= render 'main/sections/contact' %>

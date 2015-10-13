@@ -8,9 +8,10 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'turbolinks'
-gem 'bcrypt', '~> 3.1.7'
-gem 'haml-rails'
-gem 'foundation-rails'
+gem 'devise'
+gem 'bootstrap-sass'
+gem 'font-awesome-rails'
+gem 'rdiscount'
 
 group :development, :test do
   gem 'byebug'
