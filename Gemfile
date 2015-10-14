@@ -14,6 +14,7 @@ gem 'font-awesome-rails'
 gem 'rdiscount'
 gem 'groupdate'
 gem 'chartkick'
+gem 'puma'
 
 group :development, :test do
   gem 'byebug'
