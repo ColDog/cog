@@ -1,34 +1,37 @@
-case_studies:
-  - name: Boston Pizza
-    target: boston-pizza
-    category: Business
-    image: img/portfolio/6.jpg
-    hero: img/companies/bp.jpg
-    content: |
-      Challenge: When Boston Pizza started working with us, they had 22,000 employees across the country who needed to be trained in French and English, an expensive SharePoint-based system that was so disliked, only 20% of the company was even using it, and training videos were costing far too much and taking far too long to produce.
+phone: 123 456 789
+email: email@email.com
 
-      Solution: We built a multilingual, custom learning management system for Boston Pizza using free, open-source software that eliminated the need for expensive enterprise solutions, saving over a million a year in license fees. The new system is successfully used by 100% of employees and supports targeted surveys and crowd-sourcing. We enabled in-house video production capabilities so that Boston Pizza can now produce and publish their own videos internally in a single day for a fraction the price.
+titles:
+  features: Fabric is More than a LMS
+  companies: Fabric is Helping
+  case_studies: Our Case Studies
+  about: Learn About Cogcentric Labs
+  demo: Watch Fabric in Action
+  contact: Get Started With Fabric
 
-      > After researching different off-the-shelf Learning Management Systems, we decided to work with Cogcentric Labs in designing our own custom LMS. Not only was the experience working with them from start to finish a great one, we completed on time and on budget with end users really liking the new platform.
-      What made the experience great – Cogcentric used a very collaborative and agile process that allowed for rapid development and end-user group feedback through all phases of the development. Being that this was a non-IT project, there was a concern on how we would sustain the new platform after launch, Cogcentric went out of their way to ensure our IT team was informed and educated throughout the project.
-      Bottom line, I highly recommend the Cogcentric team and would not hesitate to work with them again in the future. ~ Caroline Schein Vice-President, People & Operational Systems Boston Pizza International Inc.
+tagline: The most advanced learning management software in the world.
 
-  - name: Bycast
-    target: bycast
-    category: Business
-    image: img/portfolio/2.jpg
-    hero: img/companies/bycast.jpg
-    content: |
-      Challenge: A growing tech startup, Bycast's grid storage software was being re-sold by partners IBM and HP under different brands, with engineers all over the world needing to be trained at scale. They were a 40-person company with no training department, no learning professionals on staff, and no learning content.
+text:
+  about: |
+    Cogcentric Labs develops educational software, including the learning management system onFabric, and provide organizations with instructional design solutions.
 
-      Solution: Working with the documentation team and developers, we created a blend of classroom materials, games, references and a custom learning management system with a knowledge base and hot linking of key terms. Bycast's training was delivered on time, subject matter experts participated in guided live training sessions, where knowledge was shared as well as captured. Bycast was acquired by NetApp.
+    onFabric is the leading online learning platform for a new era in education and business. We add value through its unmatched flexibility, affordable price, and our commitment to empowering customers. We tailor onFabric to meet the individual needs of each customer, and, quite simply, it can do things that others can't.
 
-  - name: Pacific Blue Cross
-    target: pacific-blue-cross
-    category: Business
-    image: img/portfolio/3.jpg
-    hero: img/companies/blue-cross.jpg
-    content: |
-      Challenge: This insurance company was about to completely overhaul its entire claims management system, hundreds of workflows were going to be impacted, and everyone needed to be trained on the content that applied to them. Their existing system was expensive and inefficient.
+  contact: contact us about fabric!
+  demo: Watch this video
 
-      Solution: Working with representatives from every department, we mapped all of the existing workflows to corresponding roles and responsibilities, then worked with the training department to develop role and task-specific learning objectives for every employee. We built a custom learning management system using open-source software with calendars, classroom schedules, teacher's marking tools and reporting.
+people:
+  - name: Seth Tee
+    position: Co-founder and CTO
+    image: /img/people/seth.gif
+    tagline: Educational technology researcher, software developer, musician and game designer. Seth wrote the core code for Fabric and leads development efforts.
+
+  - name: Ken MacAllister
+    position: Co-founder and CEO
+    image: /img/people/ken.gif
+    tagline: Educational technology researcher, teacher, instructional designer and consultant. Ken built the business model around Fabric and manages operations.
+
+  - name: Adam Creelman
+    position: Business Development Manager
+    image: /img/people/adam.gif
+    tagline: Educational technology researcher, business grad and expert in communities of practice. Adam is making our business more scalable.

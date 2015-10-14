@@ -12,6 +12,8 @@ gem 'devise'
 gem 'bootstrap-sass'
 gem 'font-awesome-rails'
 gem 'rdiscount'
+gem 'groupdate'
+gem 'chartkick'
 
 group :development, :test do
   gem 'byebug'

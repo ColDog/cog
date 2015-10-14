@@ -1,0 +1,51 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-4">
+			<div style="height: 80vh; overflow: scroll">
+				<ul class="list-group">
+					<li class="list-group-item">
+						<h4 style="cursor: pointer"  onclick="document.getElementById('editor').innerHTML = document.getElementById('fnew').innerHTML">New Article</h4>
+					</li>
+					<% @articles.each do |article| %>
+						<li class="list-group-item">
+							<%= link_to raw('&times;'), admin_article_path(article), method: 'delete', class: 'close' %>
+							<h4 style="cursor: pointer" onclick="document.getElementById('editor').innerHTML = document.getElementById('f<%= article.id %>').innerHTML"><%= article.title %></h4>
+							<small><%= truncate(article.content, length: 100) %></small>
+						</li>
+					<% end %>
+				</ul>
+			</div>
+		</div>
+		<div class="col-sm-8">
+			<div id="editor"></div>
+		</div>
+	</div>
+</div>
+
+<div style="display: none">
+	<div id="fnew">
+		<%= form_for :article, url: admin_articles_path, method: 'post' do |f| %>
+			<%= f.text_field :title, class: 'form-control', placeholder: 'title' %>
+			<%= f.text_field :tagging, class: 'form-control', placeholder: 'tags' %>
+			<%= f.text_area :content, class: 'form-control', placeholder: 'tags', rows: 15 %>
+			<%= f.submit 'Create', class: 'btn btn-primary' %>
+		<% end %>
+	</div>
+	<% @articles.each do |article| %>
+		<div id="f<%= article.id %>">
+			<%= form_for article, url: admin_article_path(article), method: 'put' do |f| %>
+				<%= f.text_field :title, class: 'form-control', placeholder: 'title' %>
+				<%= f.text_field :tagging, value: f.object.tags.join(','), class: 'form-control', placeholder: 'tags' %>
+				<%= f.text_area :content, class: 'form-control', placeholder: 'tags', rows: 15 %>
+				<%= f.submit 'Save', class: 'btn btn-primary' %>
+		<% end %>
+		</div>
+	<% end %>
+</div>
+
+<script>
+	$(".list-group-item").click(function () {
+		$(".list-group-item").removeClass("active")
+		$(this).addClass("active")
+	})
+</script>

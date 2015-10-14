@@ -1,0 +1,44 @@
+<% cache [@articles.count, @articles.maximum(:updated_at).to_s] do %>
+	<header style="min-height: 50% !important; background-position: center; ">
+		<img style="position: absolute; top: 15px; right: 15px" src="/img/cog/logo.gif" alt="" width="180px" height="50px" class="img-responsive">
+		<div class="header-content">
+			<%= link_to raw('<i class="fa fa-arrow-circle-o-left"></i> Home'), '/', class: 'btn btn-default' %>
+
+			<h1 style="font-size: 8em">Fabric</h1>
+			<h2 style="font-weight: 300">The Blog</h2>
+			<a href="/#contact" class="btn btn-primary">Get Fabric</a>
+		</div>
+	</header>
+
+
+
+	<div class="content">
+		<form>
+			<div class="input-group">
+				<input type="text" name="query" class="form-control" placeholder="Search for...">
+				<span class="input-group-btn">
+					<button class="btn btn-default" type="button">Go!</button>
+				</span>
+			</div><!-- /input-group -->
+		</form>
+
+		<% @articles.each do |article| %>
+			<% cache article do %>
+				<article>
+					<a href="/articles/<%= article.id %>/<%= article.title.parameterize %>">
+						<h2><%= article.title %></h2>
+					</a>
+					<div>
+						<% article.tags.each do |tag| %>
+							<%= link_to tag, articles_path(tag: tag), class: 'btn btn-default btn-xs' %>
+						<% end %>
+					</div>
+					<br>
+					<%=raw RDiscount.new(truncate(article.content, length: 200)).to_html %>
+					<br>
+					<br>
+				</article>
+			<% end %>
+		<% end %>
+	</div>
+<% end %>

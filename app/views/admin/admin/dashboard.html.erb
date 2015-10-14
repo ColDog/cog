@@ -1,0 +1,33 @@
+
+
+<div class="row">
+	<div class="col-md-6">
+		<div class="panel panel-default">
+			<%= line_chart [
+														 {name: "Page Visits", data: View.group_by_day(:created_at).count},
+														 {name: "Unique Users", data: View.group_by_day(:created_at).distinct.count(:ip)}
+										 ]
+			%>
+		</div>
+	</div>
+	<div class="col-md-6">
+		<div class="panel panel-default">
+			<%= geo_chart View.group(:country).count %>
+		</div>
+	</div>
+	<div class="col-md-6">
+		<div class="panel panel-default">
+			<%= bar_chart Click.group(:button).count.sort_by { |k,v| v }.reverse! %>
+		</div>
+	</div>
+	<div class="col-md-6">
+		<div class="panel panel-default">
+			<%= bar_chart View.group(:path).count.sort_by { |k,v| v }.reverse! %>
+		</div>
+	</div>
+	<div class="col-md-6">
+		<div class="panel panel-default">
+			<%= bar_chart View.group(:campaign).count.sort_by { |k,v| v }.reverse! %>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,25 @@
+<section class="" id="about">
+	<div class="container">
+		<div class="col-lg-8 col-lg-offset-2 text-center">
+			<h2 class="section-heading"><%= @content['titles']['about'] %></h2>
+			<hr class="primary">
+		</div>
+		<div class="row">
+			<div class="container">
+				<%=raw RDiscount.new(@content['text']['about']).to_html %>
+			</div>
+		</div>
+		<div class="row">
+			<% @content['people'].each do |person|  %>
+				<div class="col-lg-4 col-md-4 text-center">
+					<div class="service-box">
+						<img src="<%= person['image'] %>" class="wow rollIn img-responsive" alt="" style="margin: auto">
+						<h3><%= person['name'] %></h3>
+						<h5><%= person['position'] %></h5>
+						<p class="text-muted"><%= person['tagline'] %></p>
+					</div>
+				</div>
+			<% end %>
+		</div>
+	</div>
+</section>

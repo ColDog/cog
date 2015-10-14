@@ -1,0 +1,37 @@
+<% cache [@article, @article.updated_at] do %>
+	<header style="min-height: 50% !important; background-position: center; ">
+		<img style="position: absolute; top: 15px; right: 15px" src="/img/cog/logo.gif" alt="" width="180px" height="50px" class="img-responsive">
+		<div class="header-content">
+			<%= link_to raw('<i class="fa fa-arrow-circle-o-left"></i> Back'), '/blog', class: 'btn btn-default' %>
+
+			<h1 style="font-size: 8em">Fabric</h1>
+			<h2 style="font-weight: 300">The Blog</h2>
+			<a href="/#contact" class="btn btn-primary">Get Fabric</a>
+		</div>
+	</header>
+
+
+
+	<div class="content">
+		<form>
+			<div class="input-group">
+				<input type="text" name="query" class="form-control" placeholder="Search for...">
+				<span class="input-group-btn">
+					<button class="btn btn-default" type="button">Go!</button>
+				</span>
+			</div><!-- /input-group -->
+		</form>
+
+		<article>
+			<h1><%= @article.title %></h1>
+			<div>
+				<% @article.tags.each do |tag| %>
+					<%= link_to tag, articles_path(tag: tag), class: 'btn btn-default btn-xs' %>
+				<% end %>
+			</div>
+			<br>
+			<%=raw RDiscount.new(truncate(@article.content, length: 200)).to_html %>
+		</article>
+
+	</div>
+<% end %>

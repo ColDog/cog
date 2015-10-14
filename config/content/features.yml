@@ -1,0 +1,16 @@
+features:
+  - name: Community Built
+    tagline: Built for communities of practice. New members are welcomed, their environment is completely personalized and they can quickly meet and connect with peers or potential mentors.
+    graphic: fa-users
+
+  - name: Customizable
+    tagline: Fabric can generate adaptive learning experiences that change depending on how well learners perform. Personalized learning plans can be automatically assigned or personally selected based on a learner's goals, interests, role, responsibilities, language, or any other criteria.
+    graphic: fa-edit
+
+  - name: Built for Authors
+    tagline: Fabric can be used to create powerful, responsive learning content that works on any browser. Fabric works with all types of content, from office files to embedded multimedia and games.
+    graphic: fa-paint-brush
+
+  - name: More than an LMS
+    tagline: Fabric is more flexible and customizable than an LMS, allowing you to change anything in the interface, from colours, style, fonts and layout to multilingual interfaces to what different parts of the site are called- using your lingo and terminology. You can set custom data fields, generate custom reports and create custom views.
+    graphic: fa-level-up

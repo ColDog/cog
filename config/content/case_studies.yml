@@ -1,0 +1,124 @@
+case_studies:
+  - name: Boston Pizza
+    target: boston-pizza
+    category: Business
+    image: img/companies/bp.jpg
+    hero: img/companies/bp.jpg
+    content: |
+      Challenge: When Boston Pizza started working with us, they had 22,000 employees across the country who needed to be trained in French and English, an expensive SharePoint-based system that was so disliked, only 20% of the company was even using it, and training videos were costing far too much and taking far too long to produce.
+
+      Solution: We built a multilingual, custom learning management system for Boston Pizza using free, open-source software that eliminated the need for expensive enterprise solutions, saving over a million a year in license fees. The new system is successfully used by 100% of employees and supports targeted surveys and crowd-sourcing. We enabled in-house video production capabilities so that Boston Pizza can now produce and publish their own videos internally in a single day for a fraction the price.
+
+      > After researching different off-the-shelf Learning Management Systems, we decided to work with Cogcentric Labs in designing our own custom LMS. Not only was the experience working with them from start to finish a great one, we completed on time and on budget with end users really liking the new platform.
+      What made the experience great – Cogcentric used a very collaborative and agile process that allowed for rapid development and end-user group feedback through all phases of the development. Being that this was a non-IT project, there was a concern on how we would sustain the new platform after launch, Cogcentric went out of their way to ensure our IT team was informed and educated throughout the project.
+      Bottom line, I highly recommend the Cogcentric team and would not hesitate to work with them again in the future. ~ Caroline Schein Vice-President, People & Operational Systems Boston Pizza International Inc.
+
+  - name: Bycast
+    target: bycast
+    category: Business
+    image: img/companies/bycast.jpg
+    hero: img/companies/bycast.jpg
+    content: |
+      Challenge: A growing tech startup, Bycast's grid storage software was being re-sold by partners IBM and HP under different brands, with engineers all over the world needing to be trained at scale. They were a 40-person company with no training department, no learning professionals on staff, and no learning content.
+
+      Solution: Working with the documentation team and developers, we created a blend of classroom materials, games, references and a custom learning management system with a knowledge base and hot linking of key terms. Bycast's training was delivered on time, subject matter experts participated in guided live training sessions, where knowledge was shared as well as captured. Bycast was acquired by NetApp.
+
+  - name: Pacific Blue Cross
+    target: pacific-blue-cross
+    category: Business
+    image: img/companies/doc.png
+    hero: img/companies/doc.png
+    content: |
+      Challenge: This insurance company was about to completely overhaul its entire claims management system, hundreds of workflows were going to be impacted, and everyone needed to be trained on the content that applied to them. Their existing system was expensive and inefficient.
+
+      Solution: Working with representatives from every department, we mapped all of the existing workflows to corresponding roles and responsibilities, then worked with the training department to develop role and task-specific learning objectives for every employee. We built a custom learning management system using open-source software with calendars, classroom schedules, teacher's marking tools and reporting.
+
+  - name: Modu-Loc Fence Rentals
+    target: modu-loc
+    category: Construction
+    image: img/companies/modu.jpg
+    hero: img/companies/modu.jpg
+    content: |
+    Challenge: Modu-Loc has a strong company culture and a rich history, but rapid growth across the country made it challenging to ensure everyone was trained with the same core values coast to coast. They also have an ever-growing seasonal workforce, so ensuring that everyone is properly trained and safety certified was becoming more difficult, particularly when some clients have their own additional safety training requirements. When Modu-Loc came to us, they had no training materials, no learning systems in place and no staff to create materials.
+
+    Solution: Working with the CEO and company founder, we shot and produced videos about the company history and values, as well as 'day in the life' video for new employee orientations - all in French and English. Fabric now manages all company training and certification, including WHMIS, OHSA, Forklift certification, and specialized certifications for working around high-voltages and in petrochemical plants. Fabric can also be used to report on projects in the field and generate digital newsletters.
+
+  - name: Woodworking Community of Practice
+    target: woodworking
+    category: Trades
+    hero: img/companies/wood.jpg
+    image: img/companies/wood.jpg
+    content: |
+      __Challenge:__ A group of skilled woodworking hobbyists and craftspeople were frustrated in their attempts to create an online community of practice. Those with YouTube channels found their comments filled with trolls and that lacked the ability to handle Q&A knowledge building. Those on Instagram were frustrated by the fact that hyperlinks are not supported, text isn't even selectable and their content was locked up with no easy way to manage it. Sites like Facebook filtered posts so that not everyone saw every post, and they lost ownership and control over their data on all social media sites.
+
+      Solution: We created the Woodworking online community of practice, where, for just $5 per month, members have a private space where they can engage in discussions, have live chat, post and manage their own content, with no ads and no tracking. Every member owns everything they post, members can buy, sell and trade tools, wood, products, services, and access live classes using PayPal or credit card. Members can post links, downloads, pictures and video on their blogs, and each member has a personal profile that tracks their interests, goals, tools and experience. A true community of practice where every member can learn, grow and contribute through active participation.
+
+  - name: Sound Effects
+    target: soundfx
+    category: Healthcare
+    hero: img/companies/soundfx.jpg
+    image: img/companies/soundfx.jpg
+    content: |
+      Challenge: As a language learning teacher and pronunciation coach, Rita Dickson needed a way to sell her courses online and work directly with students anywhere in the world.
+
+      Solution: Working with our video partner Viddler, we enabled video recording, indexing and timeline annotation that supports the International Phonetic Alphabet, allowing Rita and other language coaches to track and monitor progress, as well as provide video feedback to guide speech development. She can now provide courses on a free, paid, or subscription basis and expand her practice anywhere in the world.
+
+  - name: Be Well Together
+    target: be-well-together
+    category: Healthcare
+    hero: img/companies/bewell.jpg
+    image: img/companies/bewell.jpg
+    content: |
+      Challenge: Many people facing illness find themselves alone and isolated, which can worsen health outcomes. Be Well Together wanted to create a space where people trying to get well could find community and connect with health practitioners in their area.
+
+      Solution: We set up a secure online community with channels dedicated to different areas of wellbeing focus, with a general health survey and wellbeing profile members can use to personalize their experience. Site contributors can now set up health regimens, share stories and provide encouragement to other community members.
+
+  - name: Amani Institute
+    target: amani
+    category: Education
+    hero: img/companies/amani.jpg
+    image: img/companies/amani.jpg
+    content: |
+      Challenge: With campuses in Nairobi, Kenya and São Paulo, Brazil the Amani Institute needed a way to organize class materials and support online discussion in an environment with limited bandwidth where many people use their phone as a primary computer.
+
+      Solution: We created a mobile-friendly site where students could log in with Facebook, maintain a blog and participate in online discussions without using a lot of bandwidth. The Amani Institute frequently challenges us to make our software simpler and more efficient. Many of our innovations in chat and email notifications are driven by feedback from the Amani Institute.
+
+  - name: CLEAR English
+    target: clear
+    category: Education
+    hero: img/companies/clear.jpg
+    image: img/companies/clear.jpg
+    content: |
+      Challenge: Comprehensive Language Education with Assured Results (CLEAR) helps students in India prepare for the requisite Canadian and US university English exams they must pass if they want to study as a foreign student. They needed a way to provide courses and assignments to students so that they could track and give feedback on a personal basis.
+
+      Solution: We created a site where students can register, complete a writing assessment and register for online courses where they work with English teachers in Canada to prepare for success on MBA entrance exams like the GMAT, CAT and MAT.
+
+  - name: Public Elementary Schools
+    target: elementary
+    category: Education
+    image: img/companies/kto7.jpg
+    hero: img/companies/kto7.jpg
+    content: |
+      Challenge: Across the country, thousands of public school teachers work in relative isolation, each one creating many of their materials from scratch. Meanwhile, many schools are spending thousands on textbooks and expensive grading software. There are few, if any, decent learning platforms that are safe, effective and affordable.
+
+      Solution: We want to do for the public school textbook what Wikipedia did for the encyclopedia, so we set up an instance for public school teachers that is completely free to schools and includes all the tools teachers need to create assignments and assessments, along with a powerful gradebook. The site is highly secure, teachers can control access to information and collaborate on shared assignments. Students can complete projects and engage in 'flipped classroom' and Assessment for Learning projects. Access is by invite only, as we restrict the site to teachers, students and their parents. There is no advertising or spying permitted on the site to ensure kids stay safe. If you are a teacher who would like to be a pioneer on the site, contact us at: contact@cogcentric.com.
+
+  - name: United Nations CPWG
+    target: un
+    category: Research
+    image: img/companies/un.jpg
+    hero: img/companies/un.jpg
+    content: |
+      Challenge: The Child Protection Working Group (CPWG) is a UN-based organization with operations all over the planet, in multiple languages. They needed a way to get feedback on training videos to assess their effectiveness with field workers by conducting surveys and analyzing the results.
+
+      Solution: Fabric enabled the CPWG to preview videos, deploy surveys and field assessments to remote areas with low-bandwidth connections and receive detailed analyses on the results of their global-scale surveys. We produced a series of 75 animations that are now used in the videos for training field workers at the Red Cross and other humanitarian organizations.
+
+  - name: Scientific Research
+    target: science
+    category: Science
+    image: img/companies/labs.jpg
+    hero: img/companies/labs.jpg
+    content: |
+      Challenge: Whether it's materials testing or cancer research, labs are complex environments that need to manage knowledge as well as communities of practice. New members take a while to get up to speed and mentoring can be difficult to organize. Keeping track of documents and forms, recording and collecting complex data and maintaining equipment require ongoing training and support.
+
+      Solution: Fabric provides an ideal environment for welcoming new lab members, connecting teams, organizing projects, and comparing data sets from experiments over time or separated by variables. Our version tracking ensures any resource can be rolled back and members can easily locate peers, mentors and lab assistants based on profile criteria.

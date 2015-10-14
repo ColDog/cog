@@ -1,11 +1,18 @@
-<section class="no-padding" id="portfolio">
+<section class="" id="case_studies">
+
 	<div class="container-fluid">
+
+		<div class="col-lg-12 text-center">
+			<h2 class="section-heading"><%= @content['titles']['case_studies'] %></h2>
+			<hr class="primary">
+		</div>
+
 		<div class="row no-gutter">
 
-			<% case_studies.each do |study| %>
+			<% @case_studies.each do |study| %>
 				<div class="col-lg-4 col-sm-6">
 					<a href="" data-toggle="modal" data-target="#<%= study['target'] %>" class="portfolio-box">
-						<img src="<%= study['image'] %>" class="img-responsive" alt="">
+						<img src="<%= study['image'] %>" class="wow fadeIn img-responsive" alt="">
 						<div class="portfolio-box-caption">
 							<div class="portfolio-box-caption-content">
 								<div class="project-category text-faded">
@@ -24,17 +31,16 @@
 	</div>
 </section>
 
-<% case_studies.each do |study| %>
+<% @case_studies.each do |study| %>
 	<div class="modal fade" id="<%= study['target'] %>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		<div class="modal-dialog">
 			<div class="modal-content">
-				<div class="modal-header">
-					<button style="font-size: 50 px" type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<div class="modal-header" style="background-image: url(<%=raw study['hero'] %>); height: 200px;">
+					<button style="font-size: 50px" type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 					<h1 class="modal-title"><%= study['name'] %></h1>
 				</div>
 				<div class="modal-body">
-					<img src="<%= study['hero'] %>" class="img-responsive" alt="">
-					<div>
+					<div class="content">
 						<%=raw RDiscount.new(study['content']).to_html %>
 					</div>
 				</div>

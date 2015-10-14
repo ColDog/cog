@@ -1,41 +1,66 @@
-<nav class="navbar navbar-default navbar-fixed-top" style="z-index: 5">
-	<div class="container-fluid">
-		<!-- Brand and toggle get grouped for better mobile display -->
-		<div class="navbar-header">
-			<a class="navbar-brand" href="#">Brand</a>
-		</div>
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#">Link</a></li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li><a href="#">Action</a></li>
-						<li><a href="#">Another action</a></li>
-						<li><a href="#">Something else here</a></li>
-						<li role="separator" class="divider"></li>
-						<li><a href="#">Separated link</a></li>
-					</ul>
-				</li>
-			</ul>
-		</div><!-- /.navbar-collapse -->
-	</div><!-- /.container-fluid -->
-</nav>
+<% cache ['v1'] do %>
+	<nav class="navbar navbar-inverse navbar-fixed-top" id="mainNav">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/"><img src="/img/cog/logo.gif" class="img-responsive" alt="" width="100px" height="50px"></a>
+				<ul class="nav navbar-nav">
+					<li><a href="/blog">Blog</a></li>
+				</ul>
+			</div>
 
-<header style="z-index: 10">
-	<div class="header-content">
-		<div class="header-content-inner">
-			<h1>Fabric: LMS Software that Puts You in Charge</h1>
-			<hr>
-			<p>Fabric strengthens and supports communities of practice. New members are welcomed, their environment is completely personalized and they can quickly meet and connect with peers or potential mentors. As members develop, they can create and follow personalized learning plans, participate in Q&A knowledge building, comment, discuss and live chat.</p>
-			<a href="#about" class="btn btn-primary btn-xl page-scroll">LEARN</a>
-			<a href="#about" class="btn btn-primary btn-xl page-scroll">GET STARTED</a>
-		</div>
-	</div>
-</header>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#features">Features</a></li>
+					<li><a href="#companies">Partners</a></li>
+					<li><a href="#demo">Demo</a></li>
+					<li><a href="#case_studies">Case Studies</a></li>
+					<li><a href="#about">Cogcentric Labs</a></li>
+					<li><a href="#contact">Get Started</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
 
-<%= render 'main/sections/features' %>
-<%= render 'main/sections/companies' %>
-<%= render 'main/sections/case_studies', case_studies: @case_studies %>
-<%= render 'main/sections/contact' %>
+	<header>
+		<div class="header-content">
+			<h1 style="font-size: 8em">Fabric</h1>
+			<h2 style="font-weight: 300"><%= @content['tagline'] %></h2>
+			<a href="#contact" class="btn btn-primary">Get Fabric</a>
+		</div>
+	</header>
+
+	<%= render 'main/sections/features' %>
+	<%= render 'main/sections/companies' %>
+	<%= render 'main/sections/demo' %>
+	<%= render 'main/sections/case_studies' %>
+	<%= render 'main/sections/about' %>
+	<%= render 'main/sections/contact' %>
+
+	<script>
+		new WOW().init()
+		$('main').scrollspy({ target: '#mainNav' })
+		$("#mainNav li a[href^='#']").on('click', function(event) {
+			var target;
+			target = this.hash;
+
+			event.preventDefault();
+
+			var navOffset;
+			navOffset = $('#navbar').height();
+
+			return $('html, body').animate({
+				scrollTop: $(this.hash).offset().top - navOffset
+			}, 300, function() {
+				return window.history.pushState(null, null, target);
+			});
+		});
+	</script>
+<% end %>
